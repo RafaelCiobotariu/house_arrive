@@ -18,16 +18,16 @@ const LoginPage = () => {
               E-mail
             </label>
             <input
-              placeholder="email"
+              placeholder="Email"
               type="text"
               id="email"
               name="email"
-            ></input>{" "}
+            ></input>
             <label for="password" className="form-label">
               Password
             </label>
             <input
-              placeholder="password"
+              placeholder="Password"
               type="password"
               id="password"
               name="password"
