@@ -6,6 +6,7 @@ import {
   InfoWindow,
 } from "@vis.gl/react-google-maps";
 import React, { useState } from "react";
+import "./mapviewer.style.css";
 
 const Mapviewer = () => {
   const position = { lat: 50.071, lng: 14.47418 };
@@ -30,8 +31,21 @@ const Mapviewer = () => {
         </AdvancedMarker>
 
         {open && (
-          <InfoWindow position={position} onCloseClick={() => setOpen(false)}>
-            <p>Im in Prague</p>
+          <InfoWindow
+            position={position}
+            className="pin-window-info"
+            onCloseClick={() => setOpen(false)}
+          >
+            <img
+              src={require("./gettyimages-128502214-612x612.png")}
+              alt="house with a view"
+              className="info-window-image"
+            />
+            <div className="info-text">
+              <p className="house-name">La villa in Spain</p>
+              <p className="house-description">This is a very nice house </p>
+              <p className="house-price">50.000 $</p>
+            </div>
           </InfoWindow>
         )}
       </Map>
