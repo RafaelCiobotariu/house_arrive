@@ -6,6 +6,8 @@ const myData = [
       lat: 40.73061,
       lng: -73.935242,
     },
+    price: 4000,
+    description: "Nice location in New York",
   },
   {
     id: 2,
@@ -14,6 +16,8 @@ const myData = [
       lat: 48.864716,
       lng: 2.349014,
     },
+    price: 5000,
+    description: "Nice location in Paris",
   },
   {
     id: 3,
@@ -22,6 +26,8 @@ const myData = [
       lat: 24.466667,
       lng: 54.366669,
     },
+    price: 7999,
+    description: "Nice location in Abu Dhabi",
   },
 ];
 
