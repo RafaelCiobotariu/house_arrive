@@ -1,6 +1,6 @@
 import { AdvancedMarker, InfoWindow, Pin } from "@vis.gl/react-google-maps";
 import React, { useState, useEffect } from "react";
-import "./mapviewer.style.css";
+// import "./mapviewer.style.css";
 // import CustomInfoWindow from "./customInfoWindow.component";
 
 const Markers = ({ points }) => {
@@ -27,11 +27,7 @@ const Markers = ({ points }) => {
           className="pin-window-info"
           onCloseClick={() => setOpen(false)}
         >
-          <img
-            src={require("./gettyimages-128502214-612x612.png")}
-            alt="house with a view"
-            className="info-window-image"
-          />
+          <img alt="house with a view" className="info-window-image" />
           <div className="info-text">
             <p className="house-name">{selectedMarker.name}</p>
             <p className="house-description">{selectedMarker.description}</p>
