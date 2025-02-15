@@ -1,0 +1,4 @@
+.map-container {
+  display: flex !important;
+  flex-direction: row;
+}

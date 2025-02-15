@@ -1,0 +1,14 @@
+.locations-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.location-row:hover {
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+
+.location-row {
+  width: 100%;
+}
