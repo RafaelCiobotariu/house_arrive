@@ -13,6 +13,7 @@
 
 # misc
 .DS_Store
+/backend/.env
 /FrontEnd/.env
 /FrontEnd/.env.local
 /FrontEnd/.env.development.local
