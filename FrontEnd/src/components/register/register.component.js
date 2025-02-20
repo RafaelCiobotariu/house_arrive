@@ -17,16 +17,17 @@ const RegisterPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
     try {
-      const res = await api.post("api/user/register/", {
-        username,
-        email,
-        password,
-        firstName,
-        lastName,
-        userType,
+      const res = await api.post("api/users/register/", {
+        username: `${username}`,
+        email: `${email}`,
+        password: `${password}`,
+        firstName: `${firstName}`,
+        lastName: `${lastName}`,
+        userType: `${userType}`,
       });
+      console.log(res);
+      alert("User registered successfully");
       navigate("/login");
     } catch (error) {
       alert(error);
