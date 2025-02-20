@@ -1,3 +1,21 @@
 * {
   margin: 0;
 }
+
+@font-face {
+  font-family: "RobotoExtraLight2000";
+  src: local("Roboto"),
+    url("./fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url("./fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf") format("opentype");
+  font-weight: auto;
+}
+
+* {
+  font-family: RobotoExtraLight2000, sans-serif;
+}

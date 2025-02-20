@@ -8,6 +8,9 @@ const RegisterPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [userType, setUserType] = useState("buyer");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -20,6 +23,9 @@ const RegisterPage = () => {
         username,
         email,
         password,
+        firstName,
+        lastName,
+        userType,
       });
       navigate("/login");
     } catch (error) {
@@ -40,30 +46,67 @@ const RegisterPage = () => {
         </div>
         <div className="register-form-container">
           <form className="register-form" onSubmit={handleSubmit}>
-            <label for="username" className="form-label">
+            <label for="username" className="form-label ">
               Username
             </label>
             <input
+              className="form-input "
               placeholder="Username"
               type="text"
               id="username"
               name="username"
               onChange={(e) => setUsername(e.target.value)}
             ></input>
-            <label for="email" className="form-label">
+            <label for="firstName" className="form-label ">
+              First name
+            </label>
+            <input
+              className="form-input "
+              placeholder="First name"
+              type="text"
+              id="firstName"
+              name="firstName"
+              onChange={(e) => setFirstName(e.target.value)}
+            ></input>
+            <label for="firstName" className="form-label ">
+              Last name
+            </label>
+            <input
+              className="form-input "
+              placeholder="Last name"
+              type="text"
+              id="lastName"
+              name="lastName"
+              onChange={(e) => setLastName(e.target.value)}
+            ></input>
+            <label for="userType" className="form-label ">
+              Why are you here for?
+            </label>
+            <select
+              className="form-input"
+              id="userType"
+              name="userType"
+              onChange={(e) => setUserType(e.target.value)}
+            >
+              <option value="buyer">I want to buy</option>
+              <option value="seller">I want to sell</option>
+            </select>
+            <label for="email" className="form-label ">
               E-mail
             </label>
             <input
+              className="form-input "
               placeholder="Email"
               type="text"
               id="email"
               name="email"
               onChange={(e) => setEmail(e.target.value)}
             ></input>
-            <label for="password" className="form-label">
+            <label for="password" className="form-label ">
               Password
             </label>
             <input
+              className="form-input "
               placeholder="Password"
               type="password"
               id="password"
@@ -73,11 +116,9 @@ const RegisterPage = () => {
             <input className="submit-button" type="submit" value="Register" />
           </form>
         </div>
-        <GoogleButton
-          label="Continue with Google"
-          type="lights"
-          className="google-button"
-        />
+        <div className="google-button">
+          <GoogleButton label="Continue with Google" type="lights" />
+        </div>
       </div>
     </div>
   );
