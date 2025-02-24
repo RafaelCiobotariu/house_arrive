@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: RobotoExtraLight2000, sans-serif;
 }
 
 @font-face {
@@ -14,8 +15,4 @@
   src: local("Roboto"),
     url("./fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf") format("opentype");
   font-weight: auto;
-}
-
-* {
-  font-family: RobotoExtraLight2000, sans-serif;
 }

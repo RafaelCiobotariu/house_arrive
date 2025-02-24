@@ -19,7 +19,7 @@ const CustomMap = ({ selectedLocation, locations }) => {
   return (
     <APIProvider apiKey={`${apiKey}`}>
       <Map
-        style={{ width: "80vw", height: "100vh" }}
+        style={{ width: "100%", height: "94vh" }}
         defaultCenter={mapCenter}
         defaultZoom={9}
         mapId={`${mapId}`}

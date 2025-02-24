@@ -26,8 +26,7 @@ const RegisterPage = () => {
         lastName: `${lastName}`,
         userType: `${userType}`,
       });
-      console.log(res);
-      alert("User registered successfully");
+
       navigate("/login");
     } catch (error) {
       alert(error);

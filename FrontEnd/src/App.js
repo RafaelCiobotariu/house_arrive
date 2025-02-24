@@ -7,6 +7,8 @@ import Mapview from "./components/mapview/mapview.component";
 import AddLocation from "./components/addLocation/addLocation.component";
 import ProtectedRoute from "./components/protectedRoute/protectedRoute";
 import NotFound from "./components/notFound/notFound.component";
+import Navbar from "./components/navbar/navbar.component";
+import "./App.css";
 
 function Logout() {
   localStorage.removeItem("token");
@@ -20,8 +22,10 @@ function RegisterAndLogout() {
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <BrowserRouter>
+        <Navbar />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
