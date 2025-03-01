@@ -1,17 +1,15 @@
 .locations-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: rgb(233, 230, 225);
   width: 15%;
-  height: 100%;
-  overflow-y: scroll !important;
+  height: 94vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .location-row {
   width: 100%;
   padding: 10px 10px 10px 30px;
-  height: 200px;
+  height: 300px !important;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

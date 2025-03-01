@@ -1,0 +1,58 @@
+.add-location-page {
+  width: 100vw;
+  /* margin-top: 150px; */
+  height: 92vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.add-location-form {
+  width: 30vw;
+}
+
+.add-location-select {
+  margin-bottom: 30px;
+}
+
+.add-location-input-form {
+  width: 25vw;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.add-location-input-section {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 30px 10px;
+  border-radius: 8px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add-location-input-div > input {
+  width: 80%;
+  padding: 14px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.add-location-input-div > input:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.minimap-section {
+  width: 100%;
+  height: 300px;
+}
+
+.pac-target-input {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}

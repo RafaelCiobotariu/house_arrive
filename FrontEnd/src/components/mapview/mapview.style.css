@@ -1,5 +1,5 @@
 .map-container {
   display: flex !important;
   overflow: hidden !important;
-  height: 100%;
+  height: 94vh;
 }

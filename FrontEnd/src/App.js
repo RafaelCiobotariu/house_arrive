@@ -9,6 +9,8 @@ import ProtectedRoute from "./components/protectedRoute/protectedRoute";
 import NotFound from "./components/notFound/notFound.component";
 import Navbar from "./components/navbar/navbar.component";
 import "./App.css";
+import CountrySelector from "./components/addLocation/addLocation.component";
+import CountrySelection from "./components/addLocation/addLocation.component";
 
 function Logout() {
   localStorage.removeItem("token");
@@ -32,14 +34,8 @@ function App() {
           <Route path="/logout" element={<Logout />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/map" element={<Mapview />} />
-          <Route
-            path="/add/location"
-            element={
-              <ProtectedRoute>
-                <AddLocation />
-              </ProtectedRoute>
-            }
-          />
+          {/* <Route path="/location/add" element={<AddLocation />} /> */}
+          <Route path="/location/add" element={<CountrySelection />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

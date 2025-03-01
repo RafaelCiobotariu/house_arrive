@@ -17,7 +17,7 @@ const CustomMap = ({ selectedLocation, locations }) => {
   }, [selectedLocation]);
 
   return (
-    <APIProvider apiKey={`${apiKey}`}>
+    <APIProvider apiKey={apiKey}>
       <Map
         style={{ width: "100%", height: "94vh" }}
         defaultCenter={mapCenter}
